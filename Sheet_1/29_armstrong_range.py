@@ -1,9 +1,11 @@
-number = input("Enter Number: ")
-n = len(number)
-result = 0
-total = 0
-for i in number:
-    result += int(i)**n
-print(result)
-if int(number) == result:
-    total += 1
+for num in range(100,1001):
+    temp = num 
+    total = 0
+
+    while temp>0:
+        digit = temp % 10
+        total += digit**3
+        temp //=10
+
+    if total == num:
+        print(num)
