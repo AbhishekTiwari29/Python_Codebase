@@ -7,3 +7,4 @@ for i in l1:
 for i in l2:
     l3.append(i)
 print("Merged_list", l3)
+
